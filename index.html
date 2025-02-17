@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Bugle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="newspaper-header">
+        <div class="header-content">
+            <h1 class="newspaper-title">THE DAILY BUGLE</h1>
+            <p class="newspaper-tagline">"New York’s Most Feared and Trusted Newspaper"</p>
+            <p class="newspaper-date">Monday, February 17, 2025 | New York City</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="news-container">
+            <!-- LEFT COLUMN -->
+            <div class="column left">
+                <article class="news-article">
+                    <img src="https://purepng.com/public/uploads/large/purepng.com-amazing-spidermanspider-manspidermansuperherocomic-bookmarvel-comicscharacterstan-lee-1701528655600iiy30.png" alt="Spider-Man swinging" class="news-img">
+                    <div class="text-content">
+                        <h2>SPIDER-MAN: HERO OR MENACE?</h2>
+                        <p>New York’s masked vigilante is once again in the headlines after stopping a robbery in Times Square. But is he truly a hero, or should we be concerned about a masked individual taking justice into his own hands?</p>
+                        <p>Police Commissioner George Stacy praised Spider-Man’s efforts but warned, “We can’t support vigilantes running around without accountability.” Meanwhile, citizens remain divided.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>CITIZENS SPEAK: DO WE TRUST SPIDER-MAN?</h2>
+                    <canvas id="spideyChart"></canvas>
+                </article>
+
+                <article>
+                    <h2>SPIDER-MAN’S TOP ABILITIES</h2>
+                    <canvas id="abilitiesChart"></canvas>
+                </article>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="column right">
+                <article class="news-article">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b8d2b12-21e8-4931-8a6d-fb9ecdd60383/dcake1w-38cc1525-92d5-449f-b083-e1d8d2a3eacb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzViOGQyYjEyLTIxZTgtNDkzMS04YTZkLWZiOWVjZGQ2MDM4M1wvZGNha2Uxdy0zOGNjMTUyNS05MmQ1LTQ0OWYtYjA4My1lMWQ4ZDJhM2VhY2IucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WvWo6fc91h9mW7HQC1uXOpenhh5OCj92vjNJGPAfWGw" alt="Green Goblin" class="news-img">
+                    <div class="text-content">
+                        <h2>SPIDER-MAN’S GREATEST ENEMIES</h2>
+                        <p>Spider-Man has faced numerous foes over the years, from the high-flying Green Goblin to the sinister Doctor Octopus. Which villain has caused the most trouble for our webbed hero?</p>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>SPIDER-MAN'S BEST RESCUE STATS</h2>
+                    <canvas id="rescueChart"></canvas>
+                </article>
+
+                <article>
+                    <canvas id="villainChart"></canvas>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 The Daily Bugle. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
